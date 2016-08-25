@@ -197,6 +197,10 @@ public class Vector5 extends javax.swing.JFrame {
 
     private void cmdMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMostrarActionPerformed
     double a=0, produ=1;
+    if(txtLongitud.getText().trim().equals("")){
+    JOptionPane.showMessageDialog(this, "Por favor llene el campo longitud");
+    txtLongitud.requestFocusInWindow();
+    }
     for (int i = 0; i < v.length; i++) {
     txtResultado.append(v[i]+"\n");
     }
